@@ -1,0 +1,36 @@
+.titulo-politica-privacidade{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+.bg-politica-privacidade{
+    background-color: white;
+}
+
+.texto-politica-privacidade{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin: 0 1rem;
+    @include media-breakpoint-up(md) {
+        margin: 0 4rem;
+    }
+    @include media-breakpoint-up(lg) {
+        margin: 0 4rem;
+    }
+    @include media-breakpoint-up(xl) {
+        margin: 0 4rem;
+    }
+}
+
+.list-navegadores{
+    list-style-type: none;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: blue;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+}
