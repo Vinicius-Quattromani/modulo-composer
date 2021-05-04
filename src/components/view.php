@@ -1,6 +1,6 @@
 @section("content")
 
-<div class="bg-primary">
+<div class="bg-primary py-5">
     <h2 class="titulo-politica-privacidade">Política de Privacidade</h2>
 </div>
 
@@ -11,9 +11,9 @@
                 <li class="nav-item">
                     <a class="link nav-link border-0 @if($key == 0) active @endif"
                     data-toggle="tab" 
-                    href="#<?php echo $item->id; ?>"
+                    href="#<?php echo Str::slug($item->titulo) ?>"
                     role="tab"
-                    aria-controls="<?php echo $item->id; ?>"
+                    aria-controls="<?php echo Str::slug($item->titulo) ?>"
                     aria-selected="{{$key == 0 ? true : false}}">{{$item->titulo}}</a>
                 </li>
             @endforeach
@@ -21,7 +21,7 @@
         <div class="texto-politica-privacidade tab-content" id="myTabContent">
             @foreach($itens as $key => $item)
                 <div class="tab-pane fade @if($key == 0) show active @endif"
-                id="<?php echo $item->id; ?>"
+                id="<?php echo Str::slug($item->titulo) ?>"
                 role="tabpanel"
                 aria-labelledby="home-tab">
                     {!!$item->conteudo!!}
