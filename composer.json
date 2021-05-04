@@ -1,0 +1,10 @@
+{
+    "name": "viniciusmarangoni/pacotescomposer",
+    "authors": [
+        {
+            "name": "Vinicius Marangoni",
+            "email": "viniciusmarangoni@quattromani.com.br"
+        }
+    ],
+    "require": {}
+}
